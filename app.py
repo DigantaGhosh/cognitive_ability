@@ -69,14 +69,3 @@ if cognitive_score >= 100:
 else:
     st.warning("🟠 Cognitive Ability is classified as **Low**.")
 
-# -------------------------------
-# QR Code (Update after deploy)
-# -------------------------------
-deployed_url = "https://your-app-url.streamlit.app"  # Replace after deploy
-
-qr = qrcode.make(deployed_url)
-qr_path = "qr_code.png"
-qr.save(qr_path)
-
-st.subheader("📱 Scan QR to open the app:")
-st.image(Image.open(qr_path), width=200)
