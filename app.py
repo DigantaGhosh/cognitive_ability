@@ -22,10 +22,10 @@ st.sidebar.header("Enter Your Information")
 age = st.sidebar.number_input("Age", min_value=10, max_value=100, value=25)
 gender = st.sidebar.selectbox("Gender", ["Male", "Female"])
 sleep_duration = st.sidebar.slider("Sleep Duration (hours)", 0.0, 12.0, 7.0)
-memory_test_score = st.sidebar.slider("Memory Test Score (0-100)", 0.0, 100.0, 70.0)
+#memory_test_score = st.sidebar.slider("Memory Test Score (0-100)", 0.0, 100.0, 70.0)
 stress_level = st.sidebar.slider("Stress Level (1-10)", 1.0, 10.0, 5.0)
 diet_type = st.sidebar.selectbox("Diet Type", ["Vegetarian", "Non-Vegetarian", "Vegan"])
-reaction_time = st.sidebar.number_input("Reaction Time (seconds)", 0.1, 5.0, 0.5)
+#reaction_time = st.sidebar.number_input("Reaction Time (seconds)", 0.1, 5.0, 0.5)
 daily_screen_time = st.sidebar.slider("Daily Screen Time (hours)", 0.0, 16.0, 5.0)
 caffeine_intake = st.sidebar.number_input("Caffeine Intake (cups/day)", 0.0, 10.0, 1.0)
 exercise_freq = st.sidebar.selectbox("Exercise Frequency", ["None", "Low", "High"])
@@ -47,11 +47,11 @@ cognitive_score = (
     + 0.0002346 * age
     + 0.0053528 * gender_female
     + 1.9273209 * sleep_duration
-    + 0.4847063 * memory_test_score
+    #+ 0.4847063 * memory_test_score
     - 1.930593 * stress_level
     - 0.017732 * diet_nonveg
     - 0.002951 * diet_vegan
-    - 0.163666 * reaction_time
+    #- 0.163666 * reaction_time
     - 1.450048 * daily_screen_time
     - 0.019252 * caffeine_intake
     + 4.710058 * exercise_high
